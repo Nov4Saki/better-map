@@ -1,0 +1,21 @@
+{
+  "name": "bettermap-sync-server",
+  "version": "1.0.0",
+  "description": "BetterMap WebSocket Sync Relay and Slippy Web Viewer Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nov4Saki/better-map.git"
+  },
+  "author": "Nov4Saki",
+  "license": "MIT"
+}

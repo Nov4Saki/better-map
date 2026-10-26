@@ -12,9 +12,24 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Node
+node_modules/
+package-lock.json
+
+# Binaries & Tunnels
+cloudflared.exe
+
+# Temporary files
+temp_*
+*.tmp
+
 # Raw screenshot dumps (already stitched into tiles and master map)
 new_screenshots/
 screenshots_backup_*/
+screenshots/
+screenshots_run*/
+images/
+new_images/
 thumbs/
 
 # IDE
