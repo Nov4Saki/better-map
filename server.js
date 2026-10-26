@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 const { WebSocketServer, WebSocket } = require('ws');
 
-const PORT = parseInt(process.env.PORT || process.argv[2] || '8080', 10);
+const PORT = parseInt(process.env.SERVER_PORT || process.env.PORT || process.argv[2] || '8080', 10);
 const HOST = process.env.HOST || '0.0.0.0';
 
 // Room states: room_id -> Set of WebSockets
