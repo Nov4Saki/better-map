@@ -1,0 +1,12 @@
+{
+  "name": "BetterMap Sync Server",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "BetterMap WebSocket Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "postStartCommand": "npm install && (gh codespace ports visibility 8080:public -c $CODESPACE_NAME || true) && node server.js 8080"
+}
