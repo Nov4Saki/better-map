@@ -35,7 +35,7 @@ public class BetterMapConfig {
 
     // Networking
     private SyncMode syncMode = SyncMode.THIRD_PARTY_SERVER;
-    private String serverUrl = "ws://localhost:8080";
+    private String serverUrl = "wss://wretched-skeleton-977v66x5j9pq2xvgg-8080.app.github.dev";
     private String roomKey = "default";
     private int lanPort = 24454;
     private int syncIntervalTicks = 5; // 250ms (4 times / sec)

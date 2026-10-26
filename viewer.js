@@ -31,7 +31,7 @@
   let hoveredPoi = null;
   let showScreenshotGrid = false;
   let showPois = true;
-  let pixelArtMode = false;
+  let pixelArtMode = true;
   let measureMode = false;
   let measurePoints = [];
   let userWaypoints = [];
@@ -873,10 +873,10 @@
     activeImage = fullImg;
     fullImageLoaded = true;
     if (statusDot) statusDot.classList.remove('loading');
-    if (statusText) statusText.textContent = `Ultra-Res 8K Map Ready (${meta.width} × ${meta.height} px master)`;
+    if (statusText) statusText.textContent = `FTB Native Block Map Ready (${meta.width} × ${meta.height} px, 27.9 MB)`;
     requestRender();
   };
-  fullImg.src = 'stitched_map_8k.jpg';
+  fullImg.src = 'map_native.webp';
 
   // Dynamic UI Header & Tab Updates
   const badgeTag = document.querySelector('.brand .badge-tag');

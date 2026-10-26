@@ -47,12 +47,16 @@
    * **`B`**: Quick Waypoint at current location
 
 ### Running the Relay Server & Web Map
-Start the unified WebSocket relay and HTTP map viewer:
+BetterMap includes a live, 24/7 public third-party cloud relay server hosted on GitHub Codespaces (Azure):
+* **Live Public WebSocket Endpoint**: `wss://wretched-skeleton-977v66x5j9pq2xvgg-8080.app.github.dev`
+* **Health Check & Telemetry Status**: `https://wretched-skeleton-977v66x5j9pq2xvgg-8080.app.github.dev/health`
+
+To run your own local instance:
 ```bash
-python sync_server.py
+node server.js 8080
 ```
-* **WebSocket Relay**: `ws://localhost:8080` (relays player positions between clients)
-* **Web Map UI**: `http://localhost:8000` (live multi-level map viewer)
+* **Local WebSocket Relay**: `ws://localhost:8080` (relays player positions between clients)
+* **Local Web Map UI**: `http://localhost:8080/index.html` (live multi-level map viewer)
 
 ### Building from Source
 Built using Gradle 9.5.1 and Java 25:

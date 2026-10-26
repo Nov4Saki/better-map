@@ -9,7 +9,7 @@ import json
 import websockets
 import sys
 
-PUBLIC_WSS_URL = "wss://discs-round-nancy-victory.trycloudflare.com"
+PUBLIC_WSS_URL = "wss://wretched-skeleton-977v66x5j9pq2xvgg-8080.app.github.dev"
 
 async def test_live_sync():
     print(f"Connecting to live public WebSocket server: {PUBLIC_WSS_URL}")
